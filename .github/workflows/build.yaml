@@ -1,0 +1,25 @@
+name: Build
+on:
+  push:
+    branches: [main]
+
+jobs:
+  Build_npm_package:
+    runs-on: ubuntu-latest
+    name: Build npm package
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      # Set up Java for building Jar
+      - name: Set up JDK 17
+        uses: actions/setup-node@v4 
+        with:
+          node-version: '17'
+
+      - name: Run npm build
+        run: npm run build
+          
+      - uses: actions/upload-artifact@v4
+        with:
+          name: npm package
+          path: ./dist
