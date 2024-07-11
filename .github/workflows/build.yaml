@@ -6,22 +6,30 @@ on:
 jobs:
   Build_npm_package:
     runs-on: self-hosted 
+    # Build ppm package job
     name: Build npm package
     steps:
+        # Check out code
       - name: Checkout code
         uses: actions/checkout@v4
-  
+        
+        # Install node 
       - name: Set up node 20
         uses: actions/setup-node@v4 
         with:
           node-version: '20'
 
+        # Install node dependencies
       - name: Install dependencies
         run: npm ci
+
+        # Build node project
       - name: Run npm build
         run: npm run build
-          
-      - uses: actions/upload-artifact@v4
+        
+        # Upload artificat
+      - name: Upload the artificat
+        uses: actions/upload-artifact@v4
         with:
           name: npm package
           path: ./dist
