@@ -7,7 +7,7 @@ on:
 
 jobs:
   Build_npm_package:
-    runs-on: self-hosted 
+    runs-on: ubuntu-latest
     # Build ppm package job
     name: Build npm package
     steps:
