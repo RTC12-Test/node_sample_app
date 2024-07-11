@@ -1,15 +1,9 @@
 version: 2
 updates:
-  # - package-ecosystem: "npm"
-  #   directory: '/'
-  #   schedule:
-  #     interval: "daily"
-  #     time: "22:00"
-  #     timezone: "Asia/Kolkata"
-  - package-ecosystem: "github-actions"
+  - package-ecosystem: "npm"
     directory: '/'
     schedule:
       interval: "daily"
       time: "22:00"
       timezone: "Asia/Kolkata"
-
+  
