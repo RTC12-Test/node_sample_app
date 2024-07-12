@@ -8,11 +8,3 @@ updates:
       timezone: "Asia/Kolkata"  
     reviewers:
       - "gunjanrtc" 
-  - package-ecosystem: "github-actions"
-    directory: '/'
-    schedule:
-      interval: "daily"
-      time: "10:15"
-      timezone: "Asia/Kolkata"  
-    reviewers:
-      - "gunjanrtc" 
