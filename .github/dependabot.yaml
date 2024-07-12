@@ -6,6 +6,6 @@ updates:
       interval: "daily"
       time: "22:00"
       timezone: "Asia/Kolkata"  
-    # reviewers:
-    #   - "gunjanrtc"
+    reviewers:
+      - "gunjanrtc"
     

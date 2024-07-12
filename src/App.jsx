@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <div id="root">
-        <h1>hello from rtc</h1>
+        <h1> hello from rtc </h1>
       </div>
     </>
   );
