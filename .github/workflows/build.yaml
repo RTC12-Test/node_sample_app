@@ -44,6 +44,8 @@ jobs:
           aws-region: us-east-1 
 
       - name: Upload to S3
+        env:
+          BUILD_NUMBER: ${{ github.run_number }}
         run: |
-          aws s3 cp ./dist s3://githubdemobucketrtc/npm-package/ --recursive
+          aws s3 cp ./dist s3://githubdemobucketrtc/npm-package/build-${BUILD_NUMBER}/ --recursive
 
