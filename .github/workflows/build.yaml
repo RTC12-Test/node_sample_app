@@ -11,10 +11,11 @@ on:
 jobs:
   Build_npm_package:
     runs-on: ubuntu-latest
-    # Build ppm package job
+    
+    # Build npm package job
     name: Build npm package
     steps:
-        # Check out code
+        # Check out the code
       - name: Checkout code
         uses: actions/checkout@v4.1.7
         
